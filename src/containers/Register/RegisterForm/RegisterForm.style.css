@@ -1,0 +1,12 @@
+.input-ph::placeholder {
+    opacity: 60%;
+}
+
+.login-form-controls {
+    height: 7.5vh;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,18 @@
+.homepage-requests {
+    background-color: #FBF7F0;
+    width: 95vw;
+}
+
+.requests-container {
+    height: 45vh;
+}
+
+@media screen and (max-width: 570px) {
+    .homepage-container {
+        margin: 0;
+        border-radius: 0px;
+        width: 100vw;
+        margin-top: 12.5vh;
+        font-size: .75em;
+    }
+}

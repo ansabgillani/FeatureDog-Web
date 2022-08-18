@@ -1,0 +1,16 @@
+.login-form-controls {
+    height: 7.5vh;
+}
+
+.btm-tag-line {
+    opacity: 75%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.input-ph::placeholder {
+    opacity: 60%;
+}

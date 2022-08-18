@@ -1,0 +1,10 @@
+.back-icon {
+    float: left;
+    align-self: baseline;
+    margin-bottom: 10vh;
+}
+
+.form-container {
+    width: 50%;
+    height: 100vh;
+}
