@@ -1,8 +1,8 @@
-import Navs from "./Navs";
-import UserNav from "./UserNav";
-
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
+
+import Navs from "./Navs";
+import UserNav from "./UserNav";
 
 import images from "../../utils/constants/images";
 import "./Navbar.style.css";

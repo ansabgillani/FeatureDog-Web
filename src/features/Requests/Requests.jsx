@@ -1,11 +1,12 @@
 import Request from "../../components/Request";
+
 import "./Requests.style.css";
 
 const Requests = (props) => {
   const requests = props.requests.requestData;
 
   return (
-    <div className="flex-grow-1 d-flex flex-column gap-4 p-2 requests-container" style={{ width: "58vw"}}>
+    <div className="flex-grow-1 d-flex flex-column gap-4 p-2 requests-container" style={{ width: "45rem"}}>
       {requests.map((request, index) => {
         return (
           <Request

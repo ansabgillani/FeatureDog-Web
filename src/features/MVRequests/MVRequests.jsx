@@ -5,12 +5,12 @@ const MVRequests = (props) => {
   const requests = props.requests.MVRequestData;
 
   return (
-    <div className="ms-5">
+    <div className="ms-3 mvrequests-border">
       <strong>
         <p>Most Voted</p>
       </strong>
 
-      <div className="d-flex flex-column gap-4 pe-4">
+      <div className="d-flex flex-sm-row gap-4 pe-4 flex-lg-column flex-column">
         {requests.map((request, index) => {
           return (
             <MVRequest
@@ -19,7 +19,6 @@ const MVRequests = (props) => {
               author={request.author}
               organization={request.organization}
               tags={request.tags}
-              // description={request.description}
               upvotes={request.upvotes}
               commentCount={request.commentCount}
             />

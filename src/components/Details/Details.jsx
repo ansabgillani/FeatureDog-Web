@@ -7,7 +7,7 @@ const Details = (props) => {
       {props.author}
       <pre className="d-inline"> | </pre>
       <Tags tags={props.tags} />
-      <div className=" mx-5 mb-5 mt-3 float-end">
+      <div className=" mx-5 mb-5 mt-3 float-end request-comment-count">
         <AiOutlineArrowUp
           size={60}
           className=" rounded-3"

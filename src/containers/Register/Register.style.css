@@ -1,10 +1,10 @@
 .back-icon {
     float: left;
     align-self: baseline;
-    margin-bottom: 10vh;
+    margin-bottom: 7.5vh;
 }
 
-.form-container {
-    width: 50%;
-    height: 100vh;
-}
+@media screen and (max-width: 970px) {
+    .back-icon {
+        margin-bottom: 5vh;
+    }}

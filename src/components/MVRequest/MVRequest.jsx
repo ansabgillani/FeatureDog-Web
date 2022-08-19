@@ -1,12 +1,9 @@
-import Button from "react-bootstrap/esm/Button";
-import Navbar from "../../features/Navbar";
-import Container from "react-bootstrap/Container";
-import DropdownButton from "react-bootstrap/DropdownButton";
-import Dropdown from "react-bootstrap/Dropdown";
-import Tag from "../Tag/Tag";
-import Tags from "../../features/Tags/Tags";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { FaRegComment } from "react-icons/fa";
+
+import Button from "react-bootstrap/esm/Button";
+import Tags from "../../features/Tags/Tags";
+
 import "./MVRequest.style.css";
 
 const MVRequest = (props) => {
@@ -22,7 +19,7 @@ const MVRequest = (props) => {
         {props.author}
         <pre className="d-inline"> | </pre>
         <Tags tags={props.tags} />
-        <div className=" mx-5 float-end">
+        <div className=" mx-5 float-end request-comment-count">
           <AiOutlineArrowUp
             size={60}
             className=" rounded-3"

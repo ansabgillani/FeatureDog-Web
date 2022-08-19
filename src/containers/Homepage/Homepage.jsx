@@ -10,28 +10,13 @@ import MVRequests from "../../features/MVRequests";
 import requestData from "../../utils/constants/data";
 import MVRequestData from "../../utils/constants/data";
 
+import homeRequestCheck from "../../utils/assets/homeRequestCheck";
+
 import "./Homepage.style.css";
-import { FaCheck } from "react-icons/fa";
 
 const Homepage = () => {
   const [requestPage, setRequestPage] = useState(true);
   const [roadmapPage, setRoadmapPage] = useState(false);
-
-  // console.log(requestData);
-
-  function check() {
-    if (requestPage) {
-      requestData.requestData.map((request) => {
-        request.requestPage = true;
-      });
-    } else {
-      requestData.requestData.map((request) => {
-        request.requestPage = false;
-      });
-    }
-  }
-
-  console.log(requestData.requestData);
 
   return (
     <div>
@@ -45,11 +30,11 @@ const Homepage = () => {
         setRoadmapPage={setRoadmapPage}
       />
 
-      <div className="homepage-requests mx-5 rounded-2 p-3">
+      <div className="homepage-requests mx-sm-5 mx-0 rounded-2 p-3 w-sm-100">
         <FilterBy />
 
-        <div className="d-flex mt-3 requests-container flex-wrap">
-          {check()}
+        <div className="d-flex mt-3 flex-wrap">
+          {homeRequestCheck(requestPage, requestData)}
           <Requests requests={requestData} />
           <MVRequests requests={MVRequestData} />
         </div>

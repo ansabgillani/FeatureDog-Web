@@ -3,7 +3,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import LoginForm from "./LoginForm";
 import images from "../../utils/constants/images";
-import { IoArrowBackCircle } from "react-icons/io5";
 
 import "./Login.style.css";
 
@@ -14,7 +13,6 @@ const Login = () => {
         <Row>
           <Col className="vh-100 d-flex align-items-center justify-content-center">
             <div className="form-container d-flex align-items-center flex-column justify-content-center">
-              <IoArrowBackCircle className="back-icon d-none" size={45}  />
               <h2 className="text-start w-100 fw-bold mb-4">Log in </h2>
               <p className="fw-semibold text-break mb-5">
                 With FeatureDog, you can request your favourite feature to your
